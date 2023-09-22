@@ -1,0 +1,9 @@
+.search-btn {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  border: none;
+  background-color: white;
+  color: gray;
+
+}
