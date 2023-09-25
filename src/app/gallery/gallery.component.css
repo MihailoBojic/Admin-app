@@ -1,0 +1,79 @@
+ .row .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2.5px dashed #DADCDD;
+  height: 176px;
+
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.image-container {
+  position: relative;
+}
+
+.uploaded-image1 {
+  width: 323px;
+  height: 176px;
+  display: block;
+}
+
+.uploaded-image2 {
+  width: 184px;
+  height: 176px;
+  display: block;
+}
+
+.image-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #aaa; /* siva boja, možete da promenite po želji */
+  z-index: 1;
+}
+
+
+.resetBtn {
+  width: 175px;
+  height: 33px;
+  background-color: #E3E3E3;
+  border-radius: 5px;
+  border: none;
+}
+
+.small {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  border: 1px solid #DADCDD;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+
+.galleryImages {
+  color: #3484ff;
+  background-color: #F9F9F9;
+  border: 1.5px solid #3484ff;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+
+form {
+  background-color: white;
+}
+label {
+  color: #1F2933;
+  size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}

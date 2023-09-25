@@ -7,17 +7,21 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ImageCropperModule } from 'ngx-image-cropper';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FormComponent,
-    SidebarComponent
+    SidebarComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ImageCropperModule,
 
     AppRoutingModule
   ],

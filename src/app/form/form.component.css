@@ -3,3 +3,9 @@ form {
 background-color: #FFFFFF;
 ;
 }
+label {
+  color: #1F2933;
+  size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}

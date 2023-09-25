@@ -1,0 +1,91 @@
+<form >
+
+
+  <div class="container" style="background-color: white;">
+
+    <div class="container mb-3" style="margin-top: 40px; background-color: #3484FF; height: 43px;; border-radius: 10px 10px 0px 0px; color: white;" >
+      <p>Multimedia</p>
+    </div>
+
+
+    <label class="mb-3" for="">Activity Image * (Ratio 16:9) and * (Ratio 1:1)</label>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-7 mr-3 image-container">
+          <input type="file" id="fileInput1" style="display: none;" (change)="onFileSelected($event, 'imagePreview1')">
+          <label for="fileInput1">
+              <img class="uploaded-image1" [src]="imagePreview1" *ngIf="imagePreview1">
+              <span class="image-placeholder" *ngIf="!imagePreview1">Upload photo</span>
+          </label>
+      </div>
+
+      <!--  -->
+      <div class="col-4 image-container">
+          <input type="file" id="fileInput2" style="display: none;" (change)="onFileSelected($event, 'imagePreview2')">
+          <label for="fileInput2">
+              <img class="uploaded-image2" [src]="imagePreview2" *ngIf="imagePreview2">
+              <span class="image-placeholder" *ngIf="!imagePreview2">Upload photo</span>
+          </label>
+      </div>
+
+
+      <!-- Rset dugme -->
+      <div class="container">
+        <div class="d-flex flex-row-reverse">
+          <div class="col-4">
+
+            <button class="resetBtn mt-3 mb-3" >Reset</button>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- container za male slike -->
+
+
+
+      <label>Choose Gallery images </label>
+      <div class="container mt-3 mb-3" style="border: dashed #dcdcdc;">
+        <div class="row">
+          <div class="small col"></div>
+          <div class="small col"></div>
+          <div class="small col"></div>
+          <div class="small col"></div>
+          <div class="small col"></div>
+        </div>
+      </div>
+
+      <div class="container mb-3">
+        <div class="d-flex flex-row-reverse">
+          <div class="col-8">
+            <button class="galleryImages">Gallery Immages</button>
+            <button class="galleryImages">Remove Gallery Images</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container mt-4">
+        <div class="mb-3">
+          <div class="form-group">
+            <label for="activityName">Video URL:</label>
+            <input type="text" required class="form-control" id="videoUrl"  name="videoUrl" placeholder="https://www.youtube.com" ngModel>
+          </div>
+        </div>
+        <p>Paste a link to the content you want to display</p>
+      </div>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+</form>
