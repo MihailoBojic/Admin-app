@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageCropperModule } from 'ngx-image-cropper';
+import { ActivityOfferComponent } from './activity-offer/activity-offer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ImageCropperModule } from 'ngx-image-cropper';
     NavbarComponent,
     FormComponent,
     SidebarComponent,
-    GalleryComponent
+    GalleryComponent,
+    ActivityOfferComponent
   ],
   imports: [
     BrowserModule,
