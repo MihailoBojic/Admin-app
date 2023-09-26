@@ -10,6 +10,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import { ActivityOfferComponent } from './activity-offer/activity-offer.component';
+import { TimeslotComponent } from './timeslot/timeslot.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,14 +20,17 @@ import { ActivityOfferComponent } from './activity-offer/activity-offer.componen
     FormComponent,
     SidebarComponent,
     GalleryComponent,
-    ActivityOfferComponent
+    ActivityOfferComponent,
+    TimeslotComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ImageCropperModule,
 
-    AppRoutingModule
+    AppRoutingModule,
+
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
