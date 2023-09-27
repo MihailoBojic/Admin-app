@@ -1,0 +1,18 @@
+*{
+  font-size: 14px;
+  line-height: 14px;
+}
+p{
+  font-size:16px;
+  font-weight: 600;
+}
+label{
+  color: #A9A9A9;
+}
+
+
+.form-range::-webkit-slider-runnable-track{
+
+}
+
+

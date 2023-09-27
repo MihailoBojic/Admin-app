@@ -1,0 +1,18 @@
+
+.container{
+  margin-top: 40px;
+  background-color: #3484FF;
+  height: 43px;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  padding-top: 1%;
+
+}
+agm-map {
+  height: 300px;
+}
+p{
+  font-size:16px;
+  font-weight: 600;
+}
+

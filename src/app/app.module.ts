@@ -5,13 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormComponent } from './form/form.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import { ActivityOfferComponent } from './activity-offer/activity-offer.component';
 import { TimeslotComponent } from './timeslot/timeslot.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ActivityLocationComponent } from './activity-location/activity-location.component';
+import { ActivityInterestRatingComponent } from './activity-interest-rating/activity-interest-rating.component';
+import { AgmCoreModule } from '@agm/core';
+
+
 
 @NgModule({
   declarations: [
@@ -21,16 +26,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SidebarComponent,
     GalleryComponent,
     ActivityOfferComponent,
-    TimeslotComponent
+    TimeslotComponent,
+    ActivityLocationComponent,
+    ActivityInterestRatingComponent
   ],
   imports: [
     BrowserModule,
+    AgmCoreModule.forRoot({
+      apiKey: ''
+    }),
+    BrowserAnimationsModule,
     FormsModule,
+
     ImageCropperModule,
-
-    AppRoutingModule,
-
-    BrowserAnimationsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
