@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ActivityLocationComponent } from './activity-location/activity-location.component';
 import { ActivityInterestRatingComponent } from './activity-interest-rating/activity-interest-rating.component';
 import { AgmCoreModule } from '@agm/core';
+import { HomeComponent } from './home/home.component';
+import { RouterOutlet } from '@angular/router';
 
 
 
@@ -28,7 +30,8 @@ import { AgmCoreModule } from '@agm/core';
     ActivityOfferComponent,
     TimeslotComponent,
     ActivityLocationComponent,
-    ActivityInterestRatingComponent
+    ActivityInterestRatingComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import { AgmCoreModule } from '@agm/core';
     }),
     BrowserAnimationsModule,
     FormsModule,
+    RouterOutlet,
 
     ImageCropperModule,
     ReactiveFormsModule,

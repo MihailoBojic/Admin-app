@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { range } from 'rxjs';
 
@@ -8,19 +8,17 @@ import { range } from 'rxjs';
   styleUrls: ['./activity-interest-rating.component.css']
 })
 export class ActivityInterestRatingComponent implements OnInit {
+ngOnInit(): void {
 
-  rangeSun : any = new FormControl('');
-  
-  constructor() { }
+}
 
-  ngOnInit(): void {
 
-  }
 
-  onChangeColor(){
-    if(this.rangeSun.value < 25) {
 
-    }
-  }
+  // onChangeColor(){
+  //   if(this.rangeSun.value < 25) {
+
+  //   }
+  // }
 
 }
